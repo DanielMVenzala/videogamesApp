@@ -1,0 +1,37 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "nombre": "Pedro",
+      "email": "pedro@test.com",
+      "password": "2asfXASD3",
+      "favoritos": [
+        5
+      ]
+    },
+    {
+      "id": "2",
+      "nombre": "Julia",
+      "email": "julia@test.com",
+      "password": "2342Sdfsasz",
+      "favoritos": []
+    },
+    {
+      "id": "3",
+      "nombre": "Ana",
+      "email": "ana@test.com",
+      "password": "4564asdfs43",
+      "favoritos": []
+    },
+    {
+      "id": "4",
+      "nombre": "Daniel",
+      "email": "daniel@test.com",
+      "password": "5663ddgf332",
+      "favoritos": [
+        3,
+        null
+      ]
+    }
+  ]
+}

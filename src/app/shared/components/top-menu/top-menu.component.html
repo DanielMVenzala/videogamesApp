@@ -1,0 +1,57 @@
+<div class="flex items-center">
+  <ul class="menu bg-base-200 lg:menu-horizontal rounded-box mt-3 mb-3 flex-1">
+
+      <h1 class="ml-2 mr-5 text-3xl font-bold font-anta">Gameteca 🎮</h1>
+
+    <li>
+      <a routerLink="" routerLinkActive="btn-primary" class="btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+          <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
+        </svg>
+        Home
+      </a>
+    </li>
+    <li>
+      <a routerLink="list" routerLinkActive="btn-primary" class="btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17h10M9 12h10M9 7h10M5.002 17v.002H5V17zm0-5v.002H5V12zm0-5v.002H5V7z"/>
+        </svg>
+        Listado
+      </a>
+    </li>
+
+    @if (authService.isLoggedIn()) {
+      <li>
+        <a routerLink="favourites" routerLinkActive="btn-primary" class="btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.335 10.337a.5.5 0 0 1 .28-.864l6.004-.712a.5.5 0 0 0 .396-.287l2.532-5.49a.5.5 0 0 1 .908 0l2.532 5.49a.5.5 0 0 0 .395.287l6.004.712a.5.5 0 0 1 .28.864l-4.438 4.105a.5.5 0 0 0-.15.464l1.177 5.93a.5.5 0 0 1-.735.534l-5.275-2.953a.5.5 0 0 0-.488 0l-5.276 2.952a.5.5 0 0 1-.735-.533l1.178-5.93a.5.5 0 0 0-.15-.464z"/>
+          </svg>
+          Favoritos
+        </a>
+      </li>
+    }
+
+    @if (authService.isLoggedIn()) {
+      <li>
+        <a routerLink="new" routerLinkActive="btn-primary" class="btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 5a1 1 0 0 1 1 1v5h5a1 1 0 1 1 0 2h-5v5a1 1 0 1 1-2 0v-5H6a1 1 0 1 1 0-2h5V6a1 1 0 0 1 1-1"/></svg>
+          Añadir videojuego
+        </a>
+      </li>
+    }
+  </ul>
+
+  <div class="ml-auto flex gap-2">
+    @if (authService.currentUser()) {
+  <span class="mr-2 mt-2">Hola, {{ authService.currentUser()?.nombre }}</span>
+    }
+
+    @if (!authService.isLoggedIn()) {
+      <button routerLink="auth/login" class="btn btn-primary mr-2">Login</button>
+    } @else {
+      <button (click)="authService.logout()"
+      routerLink="list"
+      class="btn btn-primary mr-2">Logout</button>
+    }
+  </div>
+</div>

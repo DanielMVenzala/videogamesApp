@@ -1,0 +1,58 @@
+<div class="container mx-auto mt-10 flex items-start gap-8">
+  <!-- Imagen del videojuego -->
+  <div class="w-1/3">
+    <img
+      *ngIf="videojuegoForm.get('imagen')?.value"
+      [src]="videojuegoForm.get('imagen')?.value"
+      alt="Imagen del videojuego"
+      class="rounded-lg shadow-md w-full object-cover"
+    >
+  </div>
+
+  <!-- Formulario de nuevo videojuego -->
+  <div class="w-2/3">
+    <h1 class="text-3xl font-bold text-center mb-6 font-anta">Añadir nuevo videojuego</h1>
+
+    <form [formGroup]="videojuegoForm" (ngSubmit)="guardarCambios()">
+      <div class="mb-4">
+        <label class="block text-gray-700 text-sm font-bold mb-2">Título:</label>
+        <input formControlName="titulo" type="text" class="input input-bordered w-full" placeholder="Título del videojuego">
+      </div>
+
+      <div class="mb-4">
+        <label class="block text-gray-700 text-sm font-bold mb-2">Género:</label>
+        <input formControlName="genero" type="text" class="input input-bordered w-full" placeholder="Género">
+      </div>
+
+      <div class="mb-4">
+        <label class="block text-gray-700 text-sm font-bold mb-2">Plataforma:</label>
+        <input formControlName="plataforma" type="text" class="input input-bordered w-full" placeholder="Plataforma">
+      </div>
+
+      <div class="mb-4">
+        <label class="block text-gray-700 text-sm font-bold mb-2">Fecha de lanzamiento:</label>
+        <input formControlName="fechaLanzamiento" type="text" class="input input-bordered w-full" placeholder="Fecha">
+      </div>
+
+      <div class="mb-4">
+        <label class="block text-gray-700 text-sm font-bold mb-2">Puntuación Metacritic:</label>
+        <input formControlName="puntuacion" type="text" class="input input-bordered w-full" placeholder="Puntuación">
+      </div>
+
+      <div class="mb-4">
+        <label class="block text-gray-700 text-sm font-bold mb-2">Descripción:</label>
+        <textarea formControlName="descripcion" rows="3" class="input input-bordered w-full" placeholder="Descripción del videojuego"></textarea>
+      </div>
+
+      <div class="mb-6">
+        <label class="block text-gray-700 text-sm font-bold mb-2">URL Imagen:</label>
+        <input formControlName="imagen" type="url" class="input input-bordered w-full" placeholder="URL de la imagen">
+      </div>
+
+      <div class="flex justify-between">
+        <button type="submit" class="btn btn-primary" [disabled]="!videojuegoForm.valid">Añadir</button>
+        <button type="button" class="btn btn-secondary" routerLink="/list">Cancelar</button>
+      </div>
+    </form>
+  </div>
+</div>

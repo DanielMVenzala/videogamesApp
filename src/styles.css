@@ -1,0 +1,41 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: night --default;
+};
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.ngx-pagination {
+  color: white;
+}
+
+.ngx-pagination a,
+.ngx-pagination button,
+.ngx-pagination .current {
+  color: white !important;
+}
+
+.ngx-pagination .disabled {
+  color: #888 !important;
+}
+
+
+@theme {
+  --font-anta: "Anta", "sans-serif";
+  --animate-fadeIn: fadeIn 0.3s ease-in-out;
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+@font-face {
+  font-family: "Anta";
+  src: url("/assets/fonts/Anta-Regular.ttf")
+    format("truetype");
+}

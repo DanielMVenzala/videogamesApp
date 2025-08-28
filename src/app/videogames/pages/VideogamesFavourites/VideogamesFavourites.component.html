@@ -1,0 +1,31 @@
+<p class="join flex text-5xl mb-5 justify-center items-center font-bold font-anta">
+  Mis favoritos
+</p>
+
+<div *ngIf="favourites$ | async as favourites">
+  <div class="flex flex-wrap justify-center gap-6">
+
+    <div *ngFor="let videogame of favourites" class="card bg-base-100 w-80 shadow">
+      <figure>
+        <img
+          [src]="videogame.imagen"
+          alt="{{ videogame.nombre }}"
+          class="h-60 w-full object-cover" />
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title">{{ videogame.nombre }}</h2>
+        <p>{{ videogame.sinopsis | slice: 0:100 }}...</p>
+
+        <button
+          (click)="deleteVideogame(+videogame.id)"
+          class="btn btn-outline-light"
+          aria-label="Eliminar de favoritos">
+          <svg width="16" height="16" fill="currentColor" class="bi bi-trash-fill">
+            <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+  </div>
+</div>

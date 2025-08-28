@@ -1,0 +1,204 @@
+{
+  "videogames": [
+    {
+      "id": 1,
+      "nombre": "The Legend of Zelda: Breath of the Wild",
+      "genero": "Acción/Aventura",
+      "consolas": ["Nintendo Switch", "Wii U"],
+      "puntuacion_metacritic": 97,
+      "anio": 2017,
+      "imagen": "/videogames/1.jpg",
+      "sinopsis": "Link despierta en un mundo devastado y debe explorar el vasto reino de Hyrule para derrotar a Ganon y restaurar la paz."
+    },
+    {
+      "id": 2,
+      "nombre": "Red Dead Redemption 2",
+      "genero": "Acción/Aventura",
+      "consolas": ["PS4", "Xbox One", "PC"],
+      "puntuacion_metacritic": 96,
+      "anio": 2018,
+      "imagen": "/videogames/2.jpg",
+      "sinopsis": "Arthur Morgan, miembro de la banda de Van der Linde, lucha por sobrevivir en el ocaso del Salvaje Oeste mientras enfrenta dilemas morales y traiciones."
+    },
+    {
+      "id": 3,
+      "nombre": "The Last of Us Part II",
+      "genero": "Acción/Aventura",
+      "consolas": ["PS4"],
+      "puntuacion_metacritic": 93,
+      "anio": 2020,
+      "imagen": "/videogames/3.jpg",
+      "sinopsis": "Ellie emprende un viaje de venganza en un mundo postapocalíptico, enfrentando enemigos y dilemas morales que pondrán a prueba su humanidad."
+    },
+    {
+      "id": 4,
+      "nombre": "Elden Ring",
+      "genero": "RPG/Acción",
+      "consolas": ["PS4", "PS5", "Xbox One", "Xbox Series X/S", "PC"],
+      "puntuacion_metacritic": 96,
+      "anio": 2022,
+      "imagen": "/videogames/4.jpg",
+      "sinopsis": "En las Tierras Intermedias, el jugador debe restaurar el Elden Ring y convertirse en el Señor de Elden, enfrentando poderosos enemigos y explorando un vasto mundo."
+    },
+    {
+      "id": 5,
+      "nombre": "God of War (2018)",
+      "genero": "Acción/Aventura",
+      "consolas": ["PS4", "PC"],
+      "puntuacion_metacritic": 94,
+      "anio": 2018,
+      "imagen": "/videogames/5.jpg",
+      "sinopsis": "Kratos y su hijo Atreus emprenden un viaje por la mitología nórdica, enfrentando dioses y criaturas mientras fortalecen su vínculo."
+    },
+    {
+      "id": 6,
+      "nombre": "Persona 5 Royal",
+      "genero": "RPG",
+      "consolas": ["PS4", "PS5", "Nintendo Switch", "PC"],
+      "puntuacion_metacritic": 95,
+      "anio": 2019,
+      "imagen": "/videogames/6.jpg",
+      "sinopsis": "Joker y sus amigos forman los Ladrones Fantasma para cambiar los corazones de los corruptos en Tokio, mientras enfrentan desafíos sobrenaturales."
+    },
+    {
+      "id": 7,
+      "nombre": "Grand Theft Auto V (versión PC/next-gen)",
+      "genero": "Acción/Mundo Abierto",
+      "consolas": ["PS4", "PS5", "Xbox One", "Xbox Series X/S", "PC"],
+      "puntuacion_metacritic": 97,
+      "anio": 2015,
+      "imagen": "/videogames/7.jpg",
+      "sinopsis": "Tres criminales muy diferentes unen fuerzas para llevar a cabo una serie de audaces atracos en Los Santos, una ciudad llena de peligros y oportunidades."
+    },
+    {
+      "id": 8,
+      "nombre": "The Witcher 3: Wild Hunt",
+      "genero": "RPG",
+      "consolas": ["PS4", "PS5", "Xbox One", "Xbox Series X/S", "PC", "Nintendo Switch"],
+      "puntuacion_metacritic": 93,
+      "anio": 2015,
+      "imagen": "/videogames/8.jpg",
+      "sinopsis": "Geralt de Rivia, un cazador de monstruos, debe encontrar a su hija adoptiva Ciri mientras se enfrenta a la amenaza de la Cacería Salvaje."
+    },
+    {
+      "id": 9,
+      "nombre": "Bloodborne",
+      "genero": "RPG/Acción",
+      "consolas": ["PS4"],
+      "puntuacion_metacritic": 92,
+      "anio": 2015,
+      "imagen": "/videogames/9.jpg",
+      "sinopsis": "Un cazador despierta en la ciudad de Yharnam infestada por una plaga monstruosa y debe descubrir los oscuros secretos que la rodean."
+    },
+    {
+      "id": 10,
+      "nombre": "Dark Souls III",
+      "genero": "RPG/Acción",
+      "consolas": ["PS4", "Xbox One", "PC"],
+      "puntuacion_metacritic": 89,
+      "anio": 2016,
+      "imagen": "/videogames/10.jpg",
+      "sinopsis": "El jugador, como un No Muerto, debe desafiar poderosos enemigos y restaurar el equilibrio en un mundo moribundo sumido en las llamas."
+    },
+    {
+      "id": 11,
+      "nombre": "Hollow Knight",
+      "genero": "Metroidvania",
+      "consolas": ["PC", "Nintendo Switch", "PS4", "Xbox One"],
+      "puntuacion_metacritic": 90,
+      "anio": 2017,
+      "imagen": "/videogames/11.jpg",
+      "sinopsis": "Un caballero sin nombre explora las profundidades del reino de Hallownest, descubriendo sus secretos y enfrentando desafiantes enemigos."
+    },
+    {
+      "id": 12,
+      "nombre": "Celeste",
+      "genero": "Plataformas",
+      "consolas": ["PC", "Nintendo Switch", "PS4", "Xbox One"],
+      "puntuacion_metacritic": 92,
+      "anio": 2018,
+      "imagen": "/videogames/12.png",
+      "sinopsis": "Madeline se embarca en un peligroso viaje para escalar el Monte Celeste mientras enfrenta sus propios miedos internos."
+    },
+    {
+      "id": 13,
+      "nombre": "Super Mario Odyssey",
+      "genero": "Plataformas",
+      "consolas": ["Nintendo Switch"],
+      "puntuacion_metacritic": 97,
+      "anio": 2017,
+      "imagen": "/videogames/13.jpg",
+      "sinopsis": "Mario y su nuevo amigo Cappy recorren diversos mundos para salvar a la princesa Peach y derrotar a Bowser en una aventura globetrotting."
+    },
+    {
+      "id": 14,
+      "nombre": "Sekiro: Shadows Die Twice",
+      "genero": "Acción/Aventura",
+      "consolas": ["PC", "PS4", "Xbox One"],
+      "puntuacion_metacritic": 90,
+      "anio": 2019,
+      "imagen": "/videogames/14.jpg",
+      "sinopsis": "Un guerrero shinobi llamado Lobo lucha para rescatar a su señor en una versión fantástica del Japón feudal."
+    },
+    {
+      "id": 15,
+      "nombre": "Resident Evil 2 (Remake)",
+      "genero": "Survival Horror",
+      "consolas": ["PC", "PS4", "Xbox One"],
+      "puntuacion_metacritic": 91,
+      "anio": 2019,
+      "imagen": "/videogames/15.jpg",
+      "sinopsis": "Leon y Claire deben escapar de Raccoon City, invadida por zombis tras un brote del virus creado por Umbrella Corporation."
+    },
+    {
+      "id": 16,
+      "nombre": "Disco Elysium",
+      "genero": "RPG",
+      "consolas": ["PC", "PS4", "PS5", "Xbox One", "Xbox Series X/S", "Nintendo Switch"],
+      "puntuacion_metacritic": 97,
+      "anio": 2019,
+      "imagen": "/videogames/16.jpg",
+      "sinopsis": "Un detective con problemas de memoria investiga un misterioso asesinato en una ciudad decadente, mientras lidia con sus propios demonios internos."
+    },
+    {
+      "id": 17,
+      "nombre": "It Takes Two",
+      "genero": "Aventura Cooperativa",
+      "consolas": ["PC", "PS4", "PS5", "Xbox One", "Xbox Series X/S"],
+      "puntuacion_metacritic": 89,
+      "anio": 2021,
+      "imagen": "/videogames/17.jpg",
+      "sinopsis": "Una pareja en crisis es transformada en muñecos y debe trabajar juntos a través de diversos desafíos para encontrar una manera de recuperar su forma humana."
+    },
+    {
+      "id": 18,
+      "nombre": "Monster Hunter: World",
+      "genero": "Acción/RPG",
+      "consolas": ["PC", "PS4", "Xbox One"],
+      "puntuacion_metacritic": 90,
+      "anio": 2018,
+      "imagen": "/videogames/18.jpg",
+      "sinopsis": "El cazador explora un mundo vibrante lleno de criaturas gigantescas, rastreándolas y enfrentándolas en épicas batallas para mejorar su equipo."
+    },
+    {
+      "id": 19,
+      "nombre": "Fire Emblem: Three Houses",
+      "genero": "Estrategia/RPG",
+      "consolas": ["Nintendo Switch"],
+      "puntuacion_metacritic": 89,
+      "anio": 2019,
+      "imagen": "/videogames/19.jpg",
+      "sinopsis": "El jugador asume el papel de un profesor en una academia de élite y guía a sus estudiantes en tácticas y estrategias para luchar en una guerra que cambiará el destino del continente."
+    },
+    {
+      "id": 20,
+      "nombre": "Cyberpunk 2077 (versión next-gen)",
+      "genero": "RPG/Mundo Abierto",
+      "consolas": ["PC", "PS5", "Xbox Series X/S"],
+      "puntuacion_metacritic": 86,
+      "anio": 2022,
+      "imagen": "/videogames/20.jpg",
+      "sinopsis": "En un futuro distópico, el mercenario V lucha por su supervivencia mientras explora las calles de Night City y busca una forma de alcanzar la inmortalidad."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+<div class="card lg:card-side bg-base-100 shadow-sm mt-20">
+  <figure class="w-[284px] h-[350px]">
+    <img
+      [src]="videojuego?.imagen"
+      alt="Album"
+      class="w-full h-full object-contain" />
+  </figure>
+  <div class="card-body">
+    <h1 class="text-4xl card-title font-bold font-anta mb-5">{{videojuego?.nombre}}</h1>
+    <p class="text-xl"><strong>Sinopsis:</strong> {{videojuego?.sinopsis}}</p>
+    <p class="text-xl"><strong>Género:</strong> {{videojuego?.genero}}</p>
+    <p class="text-xl"><strong>Consolas:</strong> {{videojuego?.consolas}}</p>
+    <p class="text-xl"><strong>Año de lanzamiento</strong>: {{videojuego?.anio}}</p>
+    <div style="display: flex; align-items: center; gap: 10px;">
+  <span class="text-xl"><strong>Puntuación Metacritic: </strong></span>
+  <div class="radial-progress ml-10" style="--value:70;" aria-valuenow="70" role="progressbar">
+    {{videojuego?.puntuacion_metacritic}}%
+  </div>
+</div>
+
+    <div class="card-actions justify-end">
+      <button
+        [routerLink]="['/list']"
+        class="btn btn-primary">Volver</button>
+    </div>
+  </div>
+</div>
